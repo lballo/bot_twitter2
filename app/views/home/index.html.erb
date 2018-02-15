@@ -1,0 +1,13 @@
+<h1>Home#index</h1>
+<p>Find me in app/views/home/index.html.erb</p>
+<h1>Créer un nouveau Tweet!</h1>
+
+<p>Tweet sans modération!</p>
+
+
+<h1>Nouveau Tweet</h1>
+<%= form_for @tweet, url: {action: "create"} do |tweet_form| %>
+  <p><%= tweet_form.label :content %>:
+  <%= tweet_form.text_field :content %></p>
+  <p><%= tweet_form.submit "Tweeter" %></p>
+<% end %>
