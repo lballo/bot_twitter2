@@ -7,7 +7,7 @@
 
 <h1>Nouveau Tweet</h1>
 <%= form_for @tweet, url: {action: "create"} do |tweet_form| %>
-  <p><%= tweet_form.label :content %>:
-  <%= tweet_form.text_field :content %></p>
+  <p><%= tweet_tag.label :content %>:
+  <%= tweet_tag.text_field :content %></p>
   <p><%= tweet_form.submit "Tweeter" %></p>
 <% end %>
